@@ -1,9 +1,17 @@
-import React, { memo } from 'react'
+import React, { memo } from 'react';
 
-const AppFooter = memo(() => {
+import FooterLeft from './footer-left';
+import FooterRight from './footer-right';
+
+import AppFooterWrapper from './style';
+
+export default memo(function HYAppFooter() {
   return (
-    <div>AppFooter</div>
+  <AppFooterWrapper>
+    <div className="wrap-v2 content">
+      <FooterLeft className="left" />
+      <FooterRight className="right" />
+    </div>
+  </AppFooterWrapper>
   )
 })
-
-export default AppFooter
