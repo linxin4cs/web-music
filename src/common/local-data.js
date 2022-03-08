@@ -1,27 +1,33 @@
 export const headerLinks = [
   {
     title: "发现音乐",
-    link: "/discover"
+    link: "/",
+    key: 'discover'
   },
   {
     title: "我的音乐",
-    link: "/mine"
+    link: "/mine",
+    key: 'mine',
   },
   {
     title: "朋友",
-    link: "/friend"
+    link: "/friend",
+    key: 'friend',
   },
   {
     title: "商城",
-    link: "https://music.163.com/store/product"
+    link: "https://music.163.com/store/product",
+    key: 'product',
   },
   {
     title: "音乐人",
-    link: "https://music.163.com/nmusician/web/index#/"
+    link: "https://music.163.com/nmusician/web/index#/",
+    key: 'nmusician',
   },
   {
     title: "下载客户端",
-    link: "https://music.163.com/#/download"
+    link: "https://music.163.com/#/download",
+    key: 'download',
   }
 ]
 
