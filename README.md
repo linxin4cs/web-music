@@ -55,3 +55,10 @@
 - normalize.css - 重置 css, 使各浏览器行为一致
 - react-router-dom - React 路由
 - 其他库自行搜索
+
+## 组件说明
+
+- App - 应用入口
+  - AppHeader 主页头部
+  - AppFooter 主页脚部
+  
