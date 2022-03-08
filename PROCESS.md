@@ -13,3 +13,10 @@
 ## 全局样式
 
 为了避免原有样式带来的干扰, 详细见 [base.css](./src/assets/css/base.css)
+
+## 配置别名
+
+`React` 的 配置文件并没有暴露出来, 我们可以通过 `yarn eject` 来使各个配置文件暴露, 当然最好的方法还是 `yarn add @craco/craco` 安装 `craco` 库, 新建一个 `craco.config.js` 文件来配置. 详见 [craco.config.js](./craco.config.js)
+
+
+
