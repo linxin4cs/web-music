@@ -9,3 +9,7 @@
 ## 划分项目目录结构
 
 详细请前往 [README.md](./README.md)
+
+## 全局样式
+
+为了避免原有样式带来的干扰, 详细见 [base.css](./src/assets/css/base.css)
