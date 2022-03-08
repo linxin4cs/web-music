@@ -5,6 +5,10 @@ const HeaderRightWrapper = styled.div`
   align-items: center;
   font-size: 12px;
 
+  a {
+    text-decoration: none;
+  }
+
   .search {
     width: 158px;
     height: 32px;
@@ -15,6 +19,18 @@ const HeaderRightWrapper = styled.div`
         font-size: 12px;
       }
     }
+  }
+
+  .author-center {
+    width: 90px;
+    height: 32px;
+    border: 1px solid #666;
+    border-radius: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 16px;
+    background-color: transparent;
+    color: #ccc;
   }
 `;
 
