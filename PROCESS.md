@@ -21,3 +21,8 @@
 ## 配置路由
 
 由于 `react-router-config` 仍在使用 `react-router-dom` 的 v5 版本, 而 `yarn add react-router-dom` 默认安装 v6 版本, 使用上有一些差异, 如需使用 `react-router-config` 需修改一些配置, 且 `react-router-dom` v6 版本已经实现了 `react-router-config` 的大部分功能, 如路由表等, 因此我们直接使用 v6, 详细见 [router](./src/router/index.jsx)
+
+## 开发组件
+
+- AppHeader
+- 
