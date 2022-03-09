@@ -5,8 +5,10 @@ const HeaderRightWrapper = styled.div`
   align-items: center;
   font-size: 12px;
 
-  a {
-    text-decoration: none;
+  a:last-child {
+    :hover {
+      color: #ccc;
+    }
   }
 
   .search {
@@ -28,6 +30,7 @@ const HeaderRightWrapper = styled.div`
     border-radius: 16px;
     line-height: 30px;
     text-align: center;
+    text-decoration: none;
     margin: 0 16px;
     background-color: transparent;
     color: #ccc;

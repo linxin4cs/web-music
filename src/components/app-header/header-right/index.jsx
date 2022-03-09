@@ -13,7 +13,7 @@ const HeaderRight = memo(() => {
         placeholder="音乐/视频/电台/用户"
         prefix={<SearchOutlined />}
       />
-      <a className="author-center" href="https://music.163.com/login?targetUrl=%2Fcreatorcenter">创作者中心</a>
+      <a className="author-center" href="https://music.163.com/login?targetUrl=%2Fcreatorcenter" target="_blank" rel="noopener noreferrer">创作者中心</a>
       <a href="https://music.163.com/login?targetUrl=%2Fcreatorcenter">登录</a>
     </HeaderRightWrapper>
   );
