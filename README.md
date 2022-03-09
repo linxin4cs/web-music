@@ -49,16 +49,34 @@
 
 ## 使用的库
 
-- antd - React 组件库
-- @ant-design/icons - antd 图标库
-- @craco/craco - create-react-app configuration override
-- normalize.css - 重置 css, 使各浏览器行为一致
-- react-router-dom - React 路由
+- `antd` React 组件库
+- `@ant-design/icons` antd 图标库
+- `@craco/craco` create-react-app configuration override
+- `normalize.css` 重置 css, 使各浏览器行为一致
+- `react-router-dom` React 路由
+- `axios` 基于 Promise 的 网络请求库
+- `styled-components` css in js, 样式组件库
 - 其他库自行搜索
 
 ## 组件说明
 
 - App - 应用入口
   - AppHeader 主页头部
+    - HeaderLeft 头部左侧
+    - HeaderRight 头部右侧
+  - Routes 路由
   - AppFooter 主页脚部
-  
+    - FooterLeft
+    - FooterRight
+
+## 页面介绍
+
+## 笔记
+
+- [react-router v6 中的嵌套路由](./notes/react-router-v6中的嵌套路由.md)
+
+## 感谢
+
+- [`coderwhy` 老师的项目及课程](https://github.com/coderwhy/hy-react-web-music)
+- [网易云 API](http://123.207.32.32:9001/)
+- [网易云 API 文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
