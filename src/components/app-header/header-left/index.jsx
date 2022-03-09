@@ -11,14 +11,14 @@ const HeaderLeft = memo(() => {
     <li key={nav.key}>
       {index < 3 ? (
         <>
-          <NavLink to={nav.link} className="nav">
+          <NavLink className="nav" to={nav.link}>
             {nav.title}
             <i className="subscript-icon sprite_01" />
           </NavLink>
         </>
       ) : (
         <>
-          <a href={nav.link} className="nav">
+          <a className="nav" href={nav.link}>
             {nav.title}
           </a>
         </>
@@ -28,7 +28,7 @@ const HeaderLeft = memo(() => {
 
   return (
     <HeaderLeftWrapper>
-      <a href="#/" className="logo sprite_01">
+      <a className="logo sprite_01" href="#/">
         网易云音乐
       </a>
       <ul className="navs">{headerLinks.map(renderNavs)}</ul>
