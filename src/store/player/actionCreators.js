@@ -1,4 +1,4 @@
-import { playerActionTypes as actionTypes } from "./constants";
+import actionTypes from "./constants";
 
 import { getLyric } from "@/services/player";
 
@@ -21,19 +21,19 @@ const changeCurrentSongIndexAction = (currentSongIndex) => ({
 
 const changeCurrentSongAction = (currentSongIndex) => {
   return (dispatch, getState) => {
-    const oldSongIndex = getState().getIn(['player', 'currentSongIndex']);
-    const playQueue = getState().getIn(['player', 'playQueue']);
+    const oldSongIndex = getState().getIn(["player", "currentSongIndex"]);
+    const playQueue = getState().getIn(["player", "playQueue"]);
 
-    if(currentSongIndex === -1 || currentSongIndex > playQueue.length - 1) {
+    if (currentSongIndex === -1 || currentSongIndex > playQueue.length - 1) {
       dispatch(changeCurrentSongIndexAction(oldSongIndex));
     } else {
       dispatch(changeCurrentSongIndexAction(currentSongIndex));
-      dispatch(getLyricAction(playQueue[currentSongIndex].id))
+      dispatch(getLyricAction(playQueue[currentSongIndex].id));
     }
 
     dispatch(changeCurrentLyricIndexAction(0));
-  }
-}
+  };
+};
 
 const changLyricAction = (lyric) => ({
   type: actionTypes.CHANGE_LYRIC_LIST,
@@ -55,18 +55,10 @@ const changeCurrentLyricIndexAction = (currentLyricIndex) => ({
   currentLyricIndex,
 });
 
-
-
-
-
-
-
 export {
- changeSequenceAction,
-
- changePlayQueueAction,
- changeCurrentSongAction,
-
- getLyricAction,
- changeCurrentLyricIndexAction,
-}
+  changeSequenceAction,
+  changePlayQueueAction,
+  changeCurrentSongAction,
+  getLyricAction,
+  changeCurrentLyricIndexAction,
+};

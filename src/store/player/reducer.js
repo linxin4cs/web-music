@@ -1,9 +1,9 @@
 import { Map } from "redux-immutable";
 
-import { playerActionTypes as actionTypes } from "./constants";
+import actionTypes from "./constants";
 import playMode from "@/common/constants";
 
-const playerDefaultState = Map({
+const defaultState = Map({
   sequence: playMode.ORDERED,
 
   playQueue: [
@@ -23,7 +23,7 @@ const playerDefaultState = Map({
   currentLyricIndex: 0,
 });
 
-const playerReducer = (state = playerDefaultState, action) => {
+const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case actionTypes.CHANGE_SEQUENCE:
       return state.set("sequence", action.sequence);
@@ -43,4 +43,4 @@ const playerReducer = (state = playerDefaultState, action) => {
   }
 };
 
-export default playerReducer;
+export default reducer;

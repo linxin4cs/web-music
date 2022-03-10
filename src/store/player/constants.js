@@ -1,4 +1,4 @@
-const playerActionTypes = {
+const actionTypes = {
   CHANGE_PLAY_QUEUE: "actionTypes/actions/player/CHANGE_PLAY_QUEUE",
   CHANGE_CURRENT_SONG_INDEX: "actionTypes/player/CHANGE_CURRENT_SONG_INDEX",
 
@@ -8,4 +8,4 @@ const playerActionTypes = {
   CHANGE_CURRENT_LYRIC_INDEX: "actionTypes/player/CHANGE_CURRENT_LYRIC_INDEX",
 };
 
-export default playerActionTypes;
+export default actionTypes;
