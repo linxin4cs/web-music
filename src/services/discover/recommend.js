@@ -1,34 +1,61 @@
-import request from '../request';
+import request from "../request";
 
-export function getTopBanners() {
+import {
+  bannerParser,
+  songSheetParser,
+  albumParser,
+  songParser,
+} from "../@/entity/discover/recommend";
+
+export function fetchTopBanners() {
   return request({
-    url: "/banner"
-  })
+    url: "/banner",
+  }).then((res) => {
+    const Banners = res.Banners;
+    const parsedBanners = Banners.map(bannerParser);
+
+    return parsedBanners;
+  });
 }
 
-export function getHotRecommends(limit) {
+export function fetchHotRecommends(limit) {
   return request({
     url: "/personalized",
     params: {
-      limit
-    }
-  })
+      limit,
+    },
+  }).then((res) => {
+    const hotRecommends = res.result;
+    const parsedHotRecommends = hotRecommends.map(songSheetParser);
+
+    return parsedHotRecommends;
+  });
 }
 
-export function getNewAlbums(limit) {
+export function fetchNewAlbums(limit) {
   return request({
     url: "/top/album",
     params: {
-      limit
-    }
-  })
+      limit,
+    },
+  }).then((res) => {
+    const newAlbums = res.albums;
+    const parsedNewAlbums = newAlbums.map(albumParser);
+
+    return parsedNewAlbums;
+  });
 }
 
-export function getTopList(idx) {
+export function fetchRanking(idx) {
   return request({
     url: "/top/list",
     params: {
-      idx
-    }
-  })
+      idx,
+    },
+  }).then((res) => {
+    const ranking = res.playList;
+    const parsedRanking = ranking.map(songParser);
+
+    return parsedRanking;
+  });
 }
