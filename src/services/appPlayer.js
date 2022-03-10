@@ -1,8 +1,8 @@
 import request from "./request";
 
-import { Song, Singer } from "@/entity/player";
+import { songParser } from "@/entity/player";
 
-export function getSong(ids) {
+export function fetchSong(ids) {
   return request({
     url: "/song/detail",
     params: {
@@ -10,17 +10,13 @@ export function getSong(ids) {
     },
   }).then((res) => {
     const song = res.songs[0];
+    const parsedSong = songParser(song);
 
-    return Song({
-      id: song.id,
-      name: song.name,
-      singer: Singer({ name: song.ar.name }),
-      pictureUrl: song.al.picUrl
-    })
+    return parsedSong;
   });
 }
 
-export function getLyric(id) {
+export function fetchLyric(id) {
   return request({
     url: "/lyric",
     params: {
