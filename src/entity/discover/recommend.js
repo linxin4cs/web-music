@@ -1,6 +1,7 @@
 const Banner = ({ pictureUrl, id, url }) => ({
   id,
   pictureUrl,
+  url
 });
 
 const SongSheet = ({ id, type, name, copyWriter, pictureUrl }) => ({
