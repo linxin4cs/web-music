@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-import { footerImages } from "@/common/local-data";
+import { footerImages } from "@/common/local_data";
 
 import FooterLeftWrapper from "./style";
 

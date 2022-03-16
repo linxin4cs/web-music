@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MenuWrapper = styled.div`
+const MenuWrapper = styled.div`
   display: flex;
   padding-left: 180px;
   position: relative;
@@ -24,3 +24,5 @@ export const MenuWrapper = styled.div`
     }
   }
 `;
+
+export default MenuWrapper;

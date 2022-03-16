@@ -1,25 +1,25 @@
 import React, { memo } from "react";
 
-import { headerLinks } from "@/common/local-data";
+import { headerMenuLinks } from "@/common/local_data";
 
 import { NavLink } from "react-router-dom";
 
 import HeaderLeftWrapper from "./style";
 
 const HeaderLeft = memo(() => {
-  const renderNavs = (nav, index) => (
-    <li key={nav.key}>
+  const renderMenu = (item, index) => (
+    <li key={item.key}>
       {index < 3 ? (
         <>
-          <NavLink className="nav" to={nav.link}>
-            {nav.title}
+          <NavLink className="menu-item" to={item.link}>
+            {item.title}
             <i className="subscript-icon sprite_01" />
           </NavLink>
         </>
       ) : (
         <>
-          <a className="nav" href={nav.link}>
-            {nav.title}
+          <a className="menu-item" href={item.link}>
+            {item.title}
           </a>
         </>
       )}
@@ -31,7 +31,7 @@ const HeaderLeft = memo(() => {
       <a className="logo sprite_01" href="#/">
         网易云音乐
       </a>
-      <ul className="navs">{headerLinks.map(renderNavs)}</ul>
+      <ul className="menu">{headerMenuLinks.map(renderMenu)}</ul>
       <NavLink to="/mine"></NavLink>
       <NavLink to="/friend"></NavLink>
     </HeaderLeftWrapper>

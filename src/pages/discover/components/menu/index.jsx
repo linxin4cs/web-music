@@ -1,8 +1,8 @@
 import React, { memo } from "react";
 
-import { menuLinks } from "@/common/local-data/discover";
+import { menuLinks } from "@/common/local_data/discover";
 
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 import MenuWrapper from "./style";
 

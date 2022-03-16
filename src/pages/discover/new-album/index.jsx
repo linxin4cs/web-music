@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 
-const Album = memo(() => {
-  return <div>index</div>;
+const NewAlbum = memo(() => {
+  return <div>NewAlbums</div>;
 });
 
-export default Album;
+export default NewAlbum;

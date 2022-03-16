@@ -1,9 +1,7 @@
-import React, { memo } from 'react'
+import React, { memo } from "react";
 
-const Songs = memo(() => {
-  return (
-    <div>index</div>
-  )
-})
+const SongSheet = memo(() => {
+  return <div>SongSheet</div>;
+});
 
-export default Songs
+export default SongSheet;

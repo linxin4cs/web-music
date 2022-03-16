@@ -1,8 +1,5 @@
 import React, { memo } from "react";
 
-import { Input } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
-
 import HeaderLeft from "./header-left";
 import HeaderRight from "./header-right";
 

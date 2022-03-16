@@ -11,12 +11,12 @@ const HeaderLeftWrapper = styled.div`
     text-indent: -9999px;
   }
 
-  .navs {
+  .menu {
     display: flex;
     line-height: 70px;
     font-size: 14px;
 
-    .nav {
+    .menu-item {
       display: inline-block;
       position: relative;
       padding: 0 19px;
@@ -43,7 +43,7 @@ const HeaderLeftWrapper = styled.div`
       }
     }
 
-    li:last-child .nav {
+    li:last-child .menu-item {
       ::after {
         position: absolute;
         content: "";

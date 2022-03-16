@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 
-const Djradio = memo(() => {
-  return <div>index</div>;
+const Radio = memo(() => {
+  return <div>Radio</div>;
 });
 
-export default Djradio;
+export default Radio;

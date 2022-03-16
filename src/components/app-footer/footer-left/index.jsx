@@ -1,6 +1,6 @@
 import React, { memo, Fragment } from "react";
 
-import { footerLinks } from '@/common/local-data';
+import { footerLinks } from '@/common/local_data';
 
 import FooterLeftWrapper from "./style";
 
