@@ -39,20 +39,21 @@ const routes = [
     path: "/friend",
     element: <Friend />,
   },
+  { path: "/todo", element: <Navigate to="/discover" /> },
 ];
 
 const getWrappedRoutes = (routes) => {
   return routes.map((item) => {
-    if(item.children) {
+    if (item.children) {
       item.children = getWrappedRoutes(item.children);
     }
-    item.element = <Suspense fallback={<div>加载中...</div>}>
-      {item.element}
-    </Suspense>
+    item.element = (
+      <Suspense fallback={<div>加载中...</div>}>{item.element}</Suspense>
+    );
 
     return item;
-  })
-}
+  });
+};
 
 // 使用 useRoutes 钩子
 const Router = () => {
