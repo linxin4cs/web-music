@@ -1,7 +1,7 @@
 import { combineReducers } from "redux-immutable";
 
 import recommendReducer from "@/store/discover/recommend";
-import playReducer from "@/store/player";
+import playReducer from "@/store/app_player";
 
 const reducer = combineReducers({
   discover: combineReducers({

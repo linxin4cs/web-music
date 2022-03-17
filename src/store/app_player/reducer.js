@@ -1,4 +1,4 @@
-import { Map } from "redux-immutable";
+import { Map } from "immutable";
 
 import actionTypes from "./constants";
 import playMode from "@/common/constants";
