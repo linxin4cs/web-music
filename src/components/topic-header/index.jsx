@@ -1,5 +1,7 @@
 import React, { memo } from "react";
 
+import { NavLink } from "react-router-dom";
+
 import PropTypes from "prop-types";
 
 import TopicHeaderWrapper from "./style";
@@ -15,7 +17,7 @@ const TopicHeader = memo((props) => {
           {items.map((item) => {
             return (
               <div className="item" key={item}>
-                <a href="todo">{item}</a>
+                <NavLink to="/todo">{item}</NavLink>
                 <span className="divider">|</span>
               </div>
             );
@@ -23,7 +25,7 @@ const TopicHeader = memo((props) => {
         </div>
       </div>
       <div className="right">
-        <a href="/todo">更多</a>
+        <NavLink to="/todo">更多</NavLink>
         <i className="icon sprite_02"></i>
       </div>
     </TopicHeaderWrapper>
