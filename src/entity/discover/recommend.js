@@ -4,12 +4,13 @@ const Banner = ({ pictureUrl, id, url }) => ({
   url
 });
 
-const SongSheet = ({ id, type, name, copyWriter, pictureUrl }) => ({
+const SongSheet = ({ id, type, name, copyWriter, pictureUrl,playCount }) => ({
   id,
   type,
   name,
   copyWriter,
   pictureUrl,
+  playCount,
 });
 
 const Album = ({ id, name, singer, pictureUrl }) => ({
@@ -41,6 +42,7 @@ const songSheetParser = (songSheet) =>
     name: songSheet.name,
     copyWriter: songSheet.copyWriter,
     pictureUrl: songSheet.picUrl,
+    playCount: songSheet.playCount,
   });
 
 const albumParser = (album) => {
