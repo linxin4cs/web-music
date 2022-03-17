@@ -23,7 +23,7 @@ const TopicHeader = memo((props) => {
         </div>
       </div>
       <div className="right">
-        <a href="todo">更多</a>
+        <a href="/todo">更多</a>
         <i className="icon sprite_02"></i>
       </div>
     </TopicHeaderWrapper>
