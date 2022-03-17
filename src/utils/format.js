@@ -9,8 +9,11 @@ function getFormattedCount(count) {
   }
 }
 
+function getSizeImage(imgUrl, size) {
+  return `${imgUrl}?param=${size}x${size}`;
+}
 
 export {
   getFormattedCount,
-
+  getSizeImage
 }
