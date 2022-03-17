@@ -1,9 +1,15 @@
-import React, { memo } from 'react'
+import React, { memo } from "react";
+
+import Banner from "./banner";
+
+import RecommendWrapper from "./style";
 
 const Recommend = memo(() => {
   return (
-    <div>Recommend</div>
-  )
-})
+    <RecommendWrapper>
+      <Banner />
+    </RecommendWrapper>
+  );
+});
 
 export default Recommend;

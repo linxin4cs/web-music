@@ -5,14 +5,14 @@ import {
   songSheetParser,
   albumParser,
   songParser,
-} from "../@/entity/discover/recommend";
+} from "@/entity/discover/recommend";
 
 export function fetchTopBanners() {
   return request({
     url: "/banner",
   }).then((res) => {
-    const Banners = res.Banners;
-    const parsedBanners = Banners.map(bannerParser);
+    const banners = res.banners;
+    const parsedBanners = banners.map(bannerParser);
 
     return parsedBanners;
   });
