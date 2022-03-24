@@ -53,7 +53,7 @@ export function fetchRanking(idx) {
       idx,
     },
   }).then((res) => {
-    const ranking = res.playList;
+    const ranking = res.playlist.tracks;
     const parsedRanking = ranking.map(songParser);
 
     return parsedRanking;
