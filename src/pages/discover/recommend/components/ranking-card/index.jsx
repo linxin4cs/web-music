@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-import { getSizeImage } from "../../../../../utils/format";
+import { getSizeImageUrl } from "../../../../../utils/format";
 
 import { NavLink } from "react-router-dom";
 
@@ -13,7 +13,7 @@ const RankingCard = memo((props) => {
     <RankingCardWrapper>
       <div className="header">
         <div className="image">
-          <img src={getSizeImage(pictureUrl)} alt="" />
+          <img src={getSizeImageUrl(pictureUrl)} alt="" />
           <NavLink to="/todo" className="image_cover">
           </NavLink>
         </div>

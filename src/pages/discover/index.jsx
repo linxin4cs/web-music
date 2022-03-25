@@ -10,7 +10,7 @@ const Discover = memo(() => {
   return (
     <DiscoverWrapper>
       <div className="top">
-        <Menu className="wrap-v1" />
+        <Menu/>
       </div>
       {/* 嵌套路由 */}
       <Outlet />

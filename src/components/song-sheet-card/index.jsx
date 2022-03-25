@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-import { getFormattedCount, getSizeImage } from "../../utils/format";
+import { getFormattedCount, getSizeImageUrl } from "../../utils/format";
 
 import SongSheetCardWrapper from "./style";
 
@@ -10,7 +10,7 @@ const SongSheetCard = memo((props) => {
   return (
     <SongSheetCardWrapper>
       <div className="cover-top">
-        <img src={getSizeImage(songSheet.pictureUrl, 140)} alt="" />
+        <img src={getSizeImageUrl(songSheet.pictureUrl, 140)} alt="" />
         <div className="cover sprite_covor">
           <div className="info sprite_covor">
             <span>
@@ -21,7 +21,7 @@ const SongSheetCard = memo((props) => {
           </div>
         </div>
       </div>
-      <div className="cover-bottom text-nowrap">{songSheet.name}</div>
+      <div className="cover-bottom">{songSheet.name}</div>
     </SongSheetCardWrapper>
   );
 });

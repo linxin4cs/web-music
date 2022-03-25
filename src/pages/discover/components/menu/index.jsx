@@ -8,7 +8,7 @@ import MenuWrapper from "./style";
 
 const Menu = memo(() => {
   return (
-    <MenuWrapper>
+    <MenuWrapper className="wrap-v1">
       {menuLinks.map((item) => {
         return (
           <div className="menu-item" key={item.key}>

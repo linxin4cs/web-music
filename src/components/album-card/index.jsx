@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-import { getSizeImage } from "@/utils/format";
+import { getSizeImageUrl } from "@/utils/format";
 
 import { NavLink } from "react-router-dom";
 
@@ -13,7 +13,7 @@ export default memo(function AlbumCard(props) {
   return (
     <AlbumCardWrapper size={size} width={width} bgp={bgp}>
       <div className="album-image">
-        <img src={getSizeImage(info.pictureUrl, size)} alt="" />
+        <img src={getSizeImageUrl(info.pictureUrl, size)} alt="" />
         <NavLink to="/todo" className="cover image_cover">
           {info.name}
         </NavLink>
