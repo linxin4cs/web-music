@@ -1,5 +1,5 @@
 const playMode = {
-  DISORDERED: "playMode/DISORDERED",
-  ODERED: "playMode/ODERED",
-  SINGLE: "playMode/SINGLE",
+  0: "playMode/ORDERED",
+  1: "playMode/DISORDERED",
+  2: "playMode/SINGLE",
 }

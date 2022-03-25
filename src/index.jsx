@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import { HashRouter } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 
-import App from '@/App';
+import App from "@/App";
 
-import '@/assets/css/base.css';
+import "@/assets/css/base.css";
 
 // 需用一个 <Router> 包裹, 提供一个 history context
 const WrappedApp = (
@@ -14,4 +14,4 @@ const WrappedApp = (
   </HashRouter>
 );
 
-ReactDOM.render(WrappedApp, document.getElementById('root'));
+ReactDOM.render(WrappedApp, document.getElementById("root"));

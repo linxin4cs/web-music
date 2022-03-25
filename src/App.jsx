@@ -1,18 +1,24 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
+import { Provider } from "react-redux";
 
-import Routes from '@/router';
+import Router from "@/router";
+import store from "./store";
 
-import AppHeader from '@/components/app-header';
-import AppFooter from '@/components/app-footer';
+import AppHeader from "@/components/app-header";
+import AppFooter from "@/components/app-footer";
+import AppPlayer from "./components/app-player";
 
 const App = memo(() => {
   return (
-    <div>
+    <Provider store={store}>
+      <div>
         <AppHeader />
-        { Routes() }
+        {Router()}
         <AppFooter />
-    </div>
-  )
-})
+        <AppPlayer />
+      </div>
+    </Provider>
+  );
+});
 
 export default App;
