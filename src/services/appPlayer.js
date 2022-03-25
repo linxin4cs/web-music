@@ -1,6 +1,6 @@
 import request from "./request";
 
-import { songParser } from "@/entity/player";
+import { songParser } from "@/entity/appPlayer";
 
 export function fetchSong(ids) {
   return request({

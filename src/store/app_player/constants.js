@@ -1,5 +1,6 @@
 const actionTypes = {
   CHANGE_PLAY_QUEUE: "actionTypes/actions/player/CHANGE_PLAY_QUEUE",
+  CHANGE_CURRENT_SONG: "actionTypes/player/CHANGE_CURRENT_SONG",
   CHANGE_CURRENT_SONG_INDEX: "actionTypes/player/CHANGE_CURRENT_SONG_INDEX",
 
   CHANGE_SEQUENCE: "actionTypes/player/CHANGE_SEQUENCE",

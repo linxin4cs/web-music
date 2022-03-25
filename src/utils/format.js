@@ -9,11 +9,37 @@ function getFormattedCount(count) {
   }
 }
 
-function getSizeImage(imgUrl, size) {
+function getFormattedTime(time) {
+  if (!time) return "00:00";
+
+  let formattedTime = "";
+  time = Math.floor(time / 1000);
+
+  if (time > 60 * 60) {
+    formattedTime += Math.floor(time / 60 / 60) + ":";
+    time %= 60 * 60;
+  }
+  if (time / 60 >= 10) {
+    formattedTime += Math.floor(time / 60) + ":";
+    time %= 60;
+  } else if (time > 60) {
+    formattedTime += "0" + Math.floor(time / 60) + ":";
+    time %= 60;
+  } else if(time < 60){
+    formattedTime += "00:";
+  }
+  if (time > 10) formattedTime += Math.floor(time);
+  if (time < 10) formattedTime += "0" + Math.floor(time);
+
+  return formattedTime;
+}
+
+function getSizeImageUrl(imgUrl, size) {
   return `${imgUrl}?param=${size}x${size}`;
 }
 
-export {
-  getFormattedCount,
-  getSizeImage
+function getPlaySongUrl(id) {
+  return `https://music.163.com/song/media/outer/url?id=${id}.mp3`;
 }
+
+export { getPlaySongUrl, getFormattedCount, getFormattedTime, getSizeImageUrl };

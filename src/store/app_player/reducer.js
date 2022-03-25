@@ -1,10 +1,9 @@
 import { Map } from "immutable";
 
 import actionTypes from "./constants";
-import playMode from "@/common/constants";
 
 const defaultState = Map({
-  sequence: playMode.ORDERED,
+  sequence: 0, // 0 循环 1 随机 2 单曲
 
   playQueue: [
     {
@@ -15,8 +14,49 @@ const defaultState = Map({
       },
       pictureUrl:
         "https://p1.music.126.net/Md3RLH0fe2a_3dMDnfqoQg==/18590542604286213.jpg",
+      duration: 241840,
+    },
+    {
+      id: 167874,
+      name: "有何不可",
+      singer: {
+        name: "许嵩",
+      },
+      pictureUrl:
+        "https://p1.music.126.net/Md3RLH0fe2a_3dMDnfqoQg==/18590542604286213.jpg",
+      duration: 241840,
+    },
+    {
+      id: 167873,
+      name: "有何不可",
+      singer: {
+        name: "许嵩",
+      },
+      pictureUrl:
+        "https://p1.music.126.net/Md3RLH0fe2a_3dMDnfqoQg==/18590542604286213.jpg",
+      duration: 241840,
+    },
+    {
+      id: 167872,
+      name: "有何不可",
+      singer: {
+        name: "许嵩",
+      },
+      pictureUrl:
+        "https://p1.music.126.net/Md3RLH0fe2a_3dMDnfqoQg==/18590542604286213.jpg",
+      duration: 241840,
     },
   ],
+  currentSong: {
+    id: 167876,
+    name: "有何不可",
+    singer: {
+      name: "许嵩",
+    },
+    pictureUrl:
+      "https://p1.music.126.net/Md3RLH0fe2a_3dMDnfqoQg==/18590542604286213.jpg",
+    duration: 241840,
+  },
   currentSongIndex: 0,
 
   lyric: [],
@@ -30,6 +70,8 @@ const reducer = (state = defaultState, action) => {
 
     case actionTypes.CHANGE_PLAY_QUEUE:
       return state.set("playQueue", action.playQueue);
+    case actionTypes.CHANGE_CURRENT_SONG:
+      return state.set("currentSong", action.currentSong);
     case actionTypes.CHANGE_CURRENT_SONG_INDEX:
       return state.set("currentSongIndex", action.currentSongIndex);
 
