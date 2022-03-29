@@ -30,14 +30,32 @@
 - Router
   - Discover
     - Recommend
+      - Menu
+      - Banner
+        - BannerControl
+        - BannerLeft
+        - BannerRight
+      - Body
+        - BodyLeft
+          - HotRecommend
+          - NewAlbum
+          - Ranking
+        - BodyRight
+          - Anchor
+          - Login
+          - Singer
     - Ranking
-    - Songs
-    - Djradio
-    - Artist
-    - Album
+    - SongSheet
+    - Radio
+    - Singer
+    - NewAlbum
 - AppFooter
   - FooterLeft
   - FooterRight
+- AppPlayer
+  - Control
+  - Operator
+  - PlayInfo
 
 ## 网络请求
 
@@ -46,3 +64,14 @@
 - `request.js` 中创建了 `axios` 实例
 - `player.js` 中包含了与 播放器 的网络请求相关的函数
 - `recommend.js` 中包含了与 推荐 页面网络请求相关的函数
+
+## 状态管理
+
+状态管理使用 `redux` 以及 `react-redux` 库, 中间件使用 `react-thunk` 库. 详见 `store` 文件夹.
+
+## 工具函数
+
+- utils
+  - format 格式化数据
+  - handlePlayQueue 处理播放列表
+  - parseLyric 转换歌词
