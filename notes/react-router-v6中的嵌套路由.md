@@ -10,11 +10,11 @@ v5 使用路由表, 需安装另一个包 `react-router-config`, 创建一个 js
 
 且在需要在使用路由的组件中使用 `renderRoutes(routes)` 渲染路由, 如下.
 
-![](https://img-1305590520.cos.ap-shanghai.myqcloud.com/react-router-v6%E4%B8%AD%E7%9A%84%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1-v5-02.png)
+![](https://img-1305590520.cos.ap-shanghai.myqcloud.com/react-router-v6%E4%B8%AD%E7%9A%84%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1-v5-03.png)
 
 拿 `/discover` 页面为例, 为了达到嵌套路由的效果, 需要在 `<HYDiscover>` 组件中再使用 `renderRoutes(props.route.routes)` 渲染子路由, 如下:
 
-![](https://img-1305590520.cos.ap-shanghai.myqcloud.com/react-router-v6%E4%B8%AD%E7%9A%84%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1-v5-03.png)
+![](https://img-1305590520.cos.ap-shanghai.myqcloud.com/react-router-v6%E4%B8%AD%E7%9A%84%E5%B5%8C%E5%A5%97%E8%B7%AF%E7%94%B1-v5-02.png)
 
 ## v6 路由表中的嵌套
 
