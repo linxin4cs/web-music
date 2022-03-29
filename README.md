@@ -14,7 +14,7 @@
 
 运行演示:
 
-![web-music-运行演示](https://gitee.com/sherlinz0/img-storage/raw/master/web-music-%E8%BF%90%E8%A1%8C%E6%BC%94%E7%A4%BA.PNG)
+![web-music-运行演示](https://img-1305590520.cos.ap-shanghai.myqcloud.com/web-music-%E8%BF%90%E8%A1%8C%E6%BC%94%E7%A4%BA.PNG)
 
 ## 本地启动项目
 
