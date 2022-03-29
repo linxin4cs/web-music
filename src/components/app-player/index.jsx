@@ -8,7 +8,6 @@ import {
   changeCurrentLyricIndexAction,
   getLyricAction,
   changePlayQueueAction,
-  changeCurrentSongWrappedAction,
   changeCurrentSongIndexAction,
 } from "@/store/app_player/actionCreators";
 
