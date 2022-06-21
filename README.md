@@ -14,7 +14,7 @@
 
 运行演示:
 
-![web-music-运行演示](https://img-1305590520.cos.ap-shanghai.myqcloud.com/web-music-%E8%BF%90%E8%A1%8C%E6%BC%94%E7%A4%BA.PNG)
+![web-music-运行演示](/desc_static/asset/img/web-music-%E8%BF%90%E8%A1%8C%E6%BC%94%E7%A4%BA.PNG)
 
 ## 本地启动项目
 
@@ -36,6 +36,7 @@
   - store 存放状态相关资源
   - utils 存放工具类资源
 - notes 笔记
+- desc_static 存放用于项目文档的静态文件
 
 ## 项目规范
 
