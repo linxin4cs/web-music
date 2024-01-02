@@ -102,6 +102,5 @@
 
 ## 感谢
 
-- [`coderwhy` 老师的项目及课程](https://github.com/coderwhy/hy-react-web-music)
 - [网易云 API](http://123.207.32.32:9001/)
 - [网易云 API 文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
