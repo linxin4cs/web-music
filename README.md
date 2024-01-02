@@ -99,9 +99,9 @@ This page is the homepage of NetEase Cloud Music.
 
 ## Notes
 
-- [react-router v6 中的嵌套路由](./notes/react-router-v6中的嵌套路由.md)
+- [Nested Routes in react-router v6](./notes/Nested-Routes-in-react-router-v6.md)
 
 ## Thanks!
 
-- [网易云 API](http://123.207.32.32:9001/)
-- [网易云 API 文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
+- [NetEase Cloud API](http://123.207.32.32:9001/)
+- [NetEase Cloud API Documentation](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
