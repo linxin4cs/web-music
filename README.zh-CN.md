@@ -1,5 +1,5 @@
 # web-music
-中文 | [English](./README.md)
+[English](./README.md) | 中文
 
 **注意: 由于网易官方加强了对数据获取的验证, 本项目的后端 API 部分已经失效, 望周知!**
 
