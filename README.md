@@ -1,5 +1,5 @@
 # web-music
-[中文](./README.zh-CN.md) | English
+English | [中文](./README.zh-CN.md) 
 
 **Note: Due to the enhanced data acquisition verification by NetEase official, the backend API part of this project has been invalidated, please be aware!**
 
